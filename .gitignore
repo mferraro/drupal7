@@ -1,5 +1,10 @@
 # OS-specific files.
 .DS_Store
+assets/
+drupalApp/
+iron/
+libraries/
+services/
 
 # Editor and language files.
 .idea/
