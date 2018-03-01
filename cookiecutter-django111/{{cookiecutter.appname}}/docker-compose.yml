@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+
+    devel:
+      build:
+        context: .
+        dockerfile: Dockerfile.dev
+      volumes:
+        - ./src/:/app
+      links:
+        - redis
+      command: devel
+      ports:
+        - "8000:8000"
+
+    redis:
+      image: redis:3.2.8-alpine
+

@@ -1,0 +1,33 @@
+# https://hub.docker.com/_/python/
+FROM python:3.5.3
+
+WORKDIR /app
+
+# The yarn package has a https repo
+RUN apt-get -qq update && apt-get -qq install curl apt-transport-https
+
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+
+# these are the pieces of working equivalent to curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+RUN echo 'deb https://deb.nodesource.com/node_6.x jessie main' > /etc/apt/sources.list.d/nodesource.list
+
+COPY system-requirements.txt /srv/system-requirements.txt
+RUN apt-get -qq update
+RUN xargs apt-get -y -q install < /srv/system-requirements.txt
+
+COPY requirements /srv/requirements
+RUN \
+    pip install -U pip && \
+    pip install -r /srv/requirements/local.txt
+
+COPY docker/entrypoint.dev.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["devel"]
+
+COPY package.json /node/package.json
+RUN cd /node && yarn install && cd /app
+
+RUN cd /app/main/static/ && yarn install && cd /app

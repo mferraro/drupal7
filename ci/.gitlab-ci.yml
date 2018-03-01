@@ -1,0 +1,51 @@
+# Documentation: https://docs.gitlab.com/ce/ci/yaml/
+
+before_script:
+  - export VERSION=${CI_PIPELINE_ID}-${CI_BUILD_REF:0:8}
+
+image: python:3 
+  
+stages:
+  - build
+  - test
+  - staging
+  - live
+
+build:
+  stage: build
+  script:
+    - echo "Build the project and push to registry"
+
+test:
+  stage: test
+  script:
+    - wget https://raw.githubusercontent.com/mozilla/html5-lint/master/html5check.py
+    - python html5check.py index.html
+
+test_other:
+  stage: test
+  script:
+    - wget https://raw.githubusercontent.com/mozilla/html5-lint/master/html5check.py
+    - python html5check.py index.html
+    - build2fail
+
+staging:
+  stage: staging
+  only:
+    - master
+  script:
+    - echo "Script to deploy $VERSION version to staging environment"
+  environment:
+    name: staging
+    url: https://staging.domain.com
+
+live:
+  stage: live
+  only:
+    - master
+  script:
+    - echo "Script to deploy $VERSION version to live environment"
+  when: manual
+  environment:
+    name: live
+    url: https://live.domain.com

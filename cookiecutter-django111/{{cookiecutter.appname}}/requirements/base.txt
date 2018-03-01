@@ -1,0 +1,17 @@
+boto==2.46.1
+Django==1.11.2
+django-appconf==1.0.2
+django_compressor==2.1.1
+django-constance[database]==2.0.0
+git+https://github.com/APSL/django-cookie-law.git@1.1.0
+django-storages==1.5.2
+django-extensions==1.7.9
+django-health-check==2.3.0
+django-kaio==0.7.0
+django-logentry-admin==1.0.2
+django-redis==4.8.0
+django-robots==3.0
+django-yubin==0.3.1
+psycopg2==2.7.1
+pytz==2017.2
+redis==2.10.5
