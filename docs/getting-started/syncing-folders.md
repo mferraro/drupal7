@@ -14,7 +14,7 @@ You can add as many synced folders as you'd like, and you can configure [any typ
 
 ## Options
 
-The synced folder options exposed are `type`, `excluded_paths` (when using rsync), `id`, `create` and `mount_options`. Besides these there are some sane defaults set when using rsync. For example all files synced with rsync will be writable by everyone, thus allowing the web server to create files.
+The synced folder options exposed are `type`, `excluded_paths` (when using rsync), `id`, `create`, `mount_options` and `nfs_udp`. Besides these there are some sane defaults set when using rsync. For example all files synced with rsync will be writable by everyone, thus allowing the web server to create files.
 
 ### Overriding defaults
 
@@ -33,6 +33,8 @@ options_override:
     "--chmod=gu=rwX,o=rX", # 664 for files, 775 for directories
   ]
 ```
+
+> Note If you're using CentOS, the group should be set to `httpd` or `apache` instead.
 
 ## Synced Folder Troubleshooting
 
@@ -55,12 +57,6 @@ vagrant_synced_folders:
 
 See [this issue](https://github.com/geerlingguy/drupal-vm/issues/67) for more information.
 
-### VirtualBox Guest Additions out of date
-
-If you get errors when running `vagrant up` stating that your guest additions are out of date, you can fix this easily by installing the `vagrant-vbguest` plugin. Run the following command in the drupal-vm folder: `vagrant plugin install vagrant-vbguest`.
-
-Otherwise, you will need to make sure you're using the officially supported `geerlingguy/ubuntu1404` box, which should _generally_ have the latest (or near-latest) guest additions installed. If not, please open an issue in the upstream project for building the base box: [`packer-ubuntu-1404`](https://github.com/geerlingguy/packer-ubuntu-1404).
-
 ### Permissions-related errors
 
 If you're encountering errors where Drupal or some other software inside the VM is having permissions issues creating or deleting files inside a synced folder, you might need to either make sure the file permissions are correct on your host machine (if a folder is not readable by you, it probably also won't be readable when mounted via NFS!), or add extra configuration to the synced folders item (if using a sync method like `rsync`):
@@ -76,6 +72,8 @@ vagrant_synced_folders:
       owner: "vagrant"
       group: "www-data"
 ```
+
+> Note If you're using CentOS, the group should be set to `httpd` or `apache` instead.
 
 See [this issue](https://github.com/geerlingguy/drupal-vm/issues/66) for more details.
 
@@ -102,6 +100,8 @@ vconfig['vagrant_synced_folders'].each do |synced_folder|
   end
 end
 ```
+
+> Note If you're using CentOS, the group should be set to `httpd` or `apache` instead.
 
 ### Other NFS-related errors
 

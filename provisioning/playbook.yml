@@ -5,34 +5,16 @@
   vars_files:
     - vars/main.yml
     - ../default.config.yml
-    - "vars/{{ ansible_os_family }}.yml"
 
   pre_tasks:
-    - name: Define config_dir.
-      set_fact:
-        config_dir: "{{ playbook_dir }}/.."
-      when: config_dir is not defined
+    - include: tasks/config.yml
       tags: ['always']
 
-    - name: Include optional configuration files.
-      include_vars: "{{ item }}"
-      with_fileglob:
-        - "{{ config_dir }}/config.yml"
-        - "{{ config_dir }}/local.config.yml"
-        - "{{ config_dir }}/secrets.yml"
-        - "{{ config_dir }}/{{ lookup('env', 'DRUPALVM_ENV')|default(drupalvm_env, true)|default(ansible_env.DRUPALVM_ENV)|default(omit) }}.config.yml"
+    - include: tasks/backwards-compatibility.yml
       tags: ['always']
-
-    - include: tasks/hostname.yml
-      tags: ['php', 'drupal']
-
-    - include: tasks/init-debian.yml
-      when: ansible_os_family == 'Debian'
-      tags: ['php', 'drupal']
       static: no
-    - include: tasks/init-redhat.yml
-      when: ansible_os_family == 'RedHat'
-      tags: ['php', 'drupal']
+
+    - include: "tasks/init-{{ ansible_os_family }}.yml"
       static: no
 
     - name: Run configured pre-provision shell scripts.
@@ -43,22 +25,22 @@
       include: "{{ outer_item }}"
       loop_control:
         loop_var: outer_item
-      with_fileglob:
-        - "{{ pre_provision_tasks_dir|default(omit) }}"
+      with_fileglob: "{{ pre_provision_tasks_dir|default(omit) }}"
 
     - include: tasks/php.yml
-      tags: ['php', 'drupal']
 
   roles:
     # Essential roles.
-    - { role: geerlingguy.repo-remi, when: ansible_os_family == 'RedHat', tags: ['webserver, php'] }
-    - { role: geerlingguy.firewall }
+    - { role: geerlingguy.repo-remi, when: ansible_os_family == 'RedHat', tags: ['webserver', 'php'] }
+    - { role: drupalvm.hostname, when: hostname_configure }
+    - { role: geerlingguy.firewall, when: firewall_enabled }
     - { role: geerlingguy.git }
     - { role: geerlingguy.postfix }
     - { role: geerlingguy.apache, when: drupalvm_webserver == 'apache', tags: ['webserver']}
     - { role: geerlingguy.apache-php-fpm, when: drupalvm_webserver == 'apache', tags: ['webserver'] }
     - { role: geerlingguy.nginx, when: drupalvm_webserver == 'nginx', tags: ['webserver'] }
-    - { role: geerlingguy.php, tags: ['php', 'drupal'] }
+    - { role: geerlingguy.php-versions, when: php_version != '', tags: ['php', 'xdebug', 'database'] }
+    - { role: geerlingguy.php, tags: ['php'] }
     - { role: geerlingguy.php-pecl, tags: ['php'] }
     - { role: geerlingguy.composer }
     - { role: geerlingguy.mysql, when: drupal_db_backend == 'mysql', tags: ['database'] }
@@ -70,24 +52,27 @@
     - { role: geerlingguy.drupal-console, when: 'drupal_major_version > 7 and "drupalconsole" in installed_extras' }
     - { role: geerlingguy.drush, when: '"drush" in installed_extras' }
     - { role: geerlingguy.memcached, when: '"memcached" in installed_extras' }
-    - { role: geerlingguy.php-memcached, when: '"memcached" in installed_extras' }
+    - { role: geerlingguy.php-memcached, when: '"memcached" in installed_extras', tags: ['php'] }
 
     - role: geerlingguy.php-tideways
       workspace: "/root/php{{ php_version }}"
       when: '"tideways" in installed_extras'
+      tags: ['php']
 
     - role: geerlingguy.php-xdebug
       workspace: "/root/php{{ php_version }}"
       when: '"xdebug" in installed_extras'
-      tags: ['xdebug']
+      tags: ['php', 'xdebug']
 
     - role: geerlingguy.php-xhprof
       workspace: "/root/php{{ php_version }}"
       when: '"xhprof" in installed_extras'
+      tags: ['php']
 
     - role: thom8.php-upload-progress
       workspace: "/root/php{{ php_version }}"
       when: '"upload-progress" in installed_extras'
+      tags: ['php']
 
     - { role: geerlingguy.blackfire, when: '"blackfire" in installed_extras' }
     - { role: geerlingguy.adminer, when: '"adminer" in installed_extras', tags: ['database'] }
@@ -97,7 +82,7 @@
     - { role: franklinkim.newrelic, when: '"newrelic" in installed_extras' }
     - { role: geerlingguy.nodejs, when: '"nodejs" in installed_extras' }
     - { role: geerlingguy.redis, when: '"redis" in installed_extras' }
-    - { role: geerlingguy.php-redis, when: '"redis" in installed_extras' }
+    - { role: geerlingguy.php-redis, when: '"redis" in installed_extras', tags: ['php'] }
     - { role: geerlingguy.ruby, when: '"ruby" in installed_extras' }
 
     - role: geerlingguy.java
@@ -111,6 +96,8 @@
     - { role: geerlingguy.solr, when: '"solr" in installed_extras' }
     - { role: geerlingguy.elasticsearch, when: '"elasticsearch" in installed_extras' }
     - { role: geerlingguy.varnish, when: '"varnish" in installed_extras' }
+    - { role: drupalvm.www, tags: ['webserver'] }
+    - { role: geerlingguy.drupal, tags: ['drupal'] }
 
     # Roles for security and stability on production.
     - { role: geerlingguy.security, when: extra_security_enabled }
@@ -119,26 +106,19 @@
     - include: tasks/sshd.yml
     - include: tasks/extras.yml
 
-    - include: tasks/www.yml
-      tags: ['webserver']
-
     - include: tasks/apparmor.yml
       when: ansible_os_family == 'Debian' and drupal_db_backend == 'mysql'
       tags: ['database']
 
-    # Build and configure the Drupal site.
-    - include_role: name=geerlingguy.drupal
-      static: no
-      tags: ['drupal']
-
     - include: tasks/drush-aliases.yml
+      when: configure_drush_aliases
 
     - include: tasks/cron.yml
       tags: ['cron']
 
     - include: tasks/dashboard.yml
       when: dashboard_install_dir is defined and dashboard_install_dir != ''
-      tags: ['webserver', 'database']
+      tags: ['webserver', 'database', 'php']
 
     - name: Run configured post-provision shell scripts.
       script: "{{ item }}"
@@ -148,5 +128,4 @@
       include: "{{ outer_item }}"
       loop_control:
         loop_var: outer_item
-      with_fileglob:
-        - "{{ post_provision_tasks_dir|default(omit) }}"
+      with_fileglob: "{{ post_provision_tasks_dir|default(omit) }}"
