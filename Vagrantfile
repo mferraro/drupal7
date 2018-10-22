@@ -164,7 +164,10 @@ Vagrant.configure('2') do |config|
 
   #Matteo
   config.vm.network :forwarded_port, guest: 8889, host: 8889, id: "jasmine"
-  config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8889 -j ACCEPT"
-  config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8888 -j ACCEPT"
+  config.vm.provision "shell", name: "iptables", inline: <<-SHELL
+    sudo iptables -I INPUT -p tcp --dport 8889 -j ACCEPT
+  SHELL
+  # config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8889 -j ACCEPT"
+  # config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8888 -j ACCEPT"
 
 end
