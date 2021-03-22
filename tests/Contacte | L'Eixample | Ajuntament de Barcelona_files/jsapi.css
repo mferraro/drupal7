@@ -1,0 +1,804 @@
+/* general */
+
+	.geobcn-style
+	{
+		border-radius: 0px;
+		padding: 0;
+		margin:0;
+		top: auto;
+		left: auto;
+		bottom: auto;
+		right: auto;
+		box-shadow: 0 0 4px 0 #555;
+	}
+		
+	.geobcn-style:hover
+	{
+		box-shadow: 0 0 4px 0 #222;
+	}
+
+	.geobcn-dropdown-cont
+	{
+		background-color: rgba(255, 255, 255, 1);
+		border: none;
+		font-family: Arial;
+		font-size: 12px;
+		position: absolute;
+		top: 25px;
+		width: 130px;
+		z-index: 1100;
+	}		
+	.mobile .geobcn-dropdown-cont
+	{
+		top: 20px;
+		width: auto;
+	}
+	
+	.geobcn-dropdown
+	{
+		background-image: url("img/mapa/dropdown.png");
+		background-position: right center;
+		background-repeat: no-repeat;
+		color: #666;
+		cursor: pointer;
+		padding: 8px 30px 8px 8px;
+		width: auto;
+	}	
+	.mobile .geobcn-dropdown
+	{
+		padding: 10px 30px 8px 15px;	
+	}
+	
+	.geobcn-dropdown:hover {
+		background-color: rgba(0, 100, 170, 0.5);
+		color: #fff;
+	}
+		
+	.geobcn-dropdown-cont ul li
+	{
+		color: #666;
+		cursor: pointer;
+		list-style: none outside none;
+		overflow: hidden;
+		padding: 8px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: auto;
+		max-width: 200px;
+	}
+	.geobcn-dropdown-cont ul li:last-child {border:0;}
+    .geobcn-dropdown-cont ul li.active{
+		color: #fff;
+		background-color: rgba(0, 60, 136, 0.7);
+		border-bottom: 1px solid #fff;
+	}
+				
+	.geobcn-dropdown-cont ul li:hover
+	{
+		background: none repeat scroll 0 0 rgba(0, 100, 170, 0.5);
+		color: #fff;
+	}	
+
+/*Control de rotació*/
+			
+.control-rotacio 
+{
+	top: 60px;
+	right: 128px;
+	position: absolute;
+	display: inline;
+}
+
+.geobcn-rotacio{
+	width: 128px;
+	height: 128px;
+	position:absolute;
+}
+
+.geobcn-rotacio-tornar
+{
+	display:none;
+	background:#edf6ff;
+	background: url('img/rotate-icon.png') no-repeat 9px 10px #fff;
+    position: absolute;
+	height: 32px !important;
+    width: 32px !important;
+    left: 48px;
+    top: 130px;
+    overflow: hidden;
+    z-index: 1250;
+    cursor:pointer;    
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transition: width 0.3s, opacity 0.3s ease-out;
+   	-moz-transition: width 0.3s, opacity 0.3s ease-out; 
+    -o-transition: width 0.3s, opacity 0.3s ease-out; 
+    transition: width 0.3s, opacity 0.3s ease-out;
+}
+
+.geobcn-rotacio-tornar:hover
+{
+	 background-color: #edf6ff;
+	 background-position: 9px -16px;
+}
+
+/*End slider*/
+
+/*Animacions*/
+
+
+.ol-overlaycontainer-stopevent .control-rotacio .animatedBox{
+	position: absolute;
+	top: 125px;
+	background-color: #EDF7FE;
+	cursor: default;
+	font-size: 12px;
+	opacity: 0;
+	padding: 15px 10px;
+	left: 85px;
+	white-space: nowrap;
+	width: auto;
+	width: 150px;
+	color: #0074F8;
+	height: 42px;
+	transition: all 0.3s ease-out 0s;
+	right: 75px;
+}
+
+/*Selecció de fons*/
+
+			
+			.fonsContainer {
+				right: 125px;
+			}
+
+			.mobile .fonsContainer{
+				right: 20px;
+			}
+
+			.fons{
+				display:none;
+				margin-top: 4px;
+			}
+			.fons ul{
+				background-color: rgba(200, 200, 200, 0.5);
+				border:1px solid white;
+				padding:0px;
+				margin: 0 0 2px;
+			}
+
+/* End Selecció de fons */
+
+
+/*Llegenda*/
+
+			.legendContainer
+			{
+				right: 275px;
+			}
+
+			.mobile .legendContainer{
+				right: 145px;
+			}
+
+			.mobile .legendShowButton { 
+				padding: 10px 30px 8px 15px;
+			}
+
+			.legend{
+				display:none;
+				margin-top: 4px;
+			}
+			.legendContainer ul{
+				background-color: rgba(200, 200, 200, 0.5);
+				border:1px solid white;
+				padding:0px;
+				margin: 2px 0 0;
+			}
+
+			.legendContainer span {margin-right:5px;}
+
+			.legendContainer input[type=checkbox] {
+				display:none;
+			}
+
+			.legendContainer input[type=checkbox] + label{
+		       background-image: url(img/mapa/checks-pc.png);
+		       background-position: 0 0px;
+			   background-repeat: repeat-y;
+			   background-size: 15px 30px;
+		       height: 15px;
+		       width: 15px;
+		       display:inline;
+		       padding: 0 0 1px 25px;
+		       cursor: pointer;
+			}
+			   
+			.legendContainer input[type=checkbox]:checked + label{
+		        background-position: 0 -15px;
+		    }
+
+		    .mobile .legendContainer input[type=checkbox] {
+				display:none;
+			}
+
+			.mobile .legendContainer input[type=checkbox] + label{
+				background-image: url(img/mapa/checks.png);
+				background-size: 20px 40px;
+				height: 20px;
+				width: 20px;
+				padding: 3px 0 3px 30px;
+		   }
+			   
+			.mobile .legendContainer input[type=checkbox]:checked + label{
+		        background-position: 0 -20px;
+		    }
+
+/* End Llegenda */
+
+/* Popup */
+	/*Mobil*/
+		.mobile .popupContainer{
+			bottom: 0;
+			position: absolute;
+			width: 100%;
+			display:none;
+			font-family: Arial;
+			font-size: 14px;
+		}
+		.mobile .infoPopup {
+			background: none repeat scroll 0 0 #ffffff;
+			border: 1px solid #cccccc;
+			color: #444444;
+			display: table;
+			height: 36px;
+			width: 100%;
+		}
+
+		.mobile .btnPopup{
+			border: 1px solid #8d8d8d;
+			background:#CFCFCF;
+			cursor: pointer;
+			float: right;
+			margin-right: 15px;
+		padding: 5px;
+			text-align: center;
+			width: 80px;
+	}
+
+		.mobile .btnPopup.cancel{
+			border: 1px solid #800000;
+		background:red;
+			color:white;
+	}
+
+	.mobile .accept {
+		background-color: rgba(0, 60, 136, 0.5);
+		border: 1px solid white;
+		border-radius: 4px;
+		color: white;
+		display: table-cell;
+		margin: 5px;
+	}
+	.mobile .candidat {
+		display: table-cell;
+		margin-left: 3px;
+		margin-top: 6px;
+		padding: 5px;
+		vertical-align: middle;
+	}
+
+	/*Web*/
+	.ol-popup {
+			position: absolute;
+			background-color: white;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+			-webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+			filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+			padding: 15px;
+			border-radius: 10px;
+			border: 1px solid #cccccc;
+			bottom: 17px;
+			left: -50px;
+			font-family: Arial;
+    		font-size: 12px;
+			height: auto;
+			width: auto;
+			overflow-x: hidden;
+			overflow-y: auto;
+			z-index: 99;
+		}
+
+		.ol-popup-content {min-width: 160px;}
+		
+		.ol-popup h3 {
+			margin-bottom: 0;
+    		margin-right: 25px;
+		}
+
+		.ol-popup-closer {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			cursor:pointer;
+			width: 14px;
+			height: 14px;
+			background: url('img/mapa/close-cloud.gif');
+		}
+
+		.ol-popup-arrow {
+			background: url('img/cloud-arrow.png');
+			position: absolute;
+			bottom: 0px;
+    		height: 18px;
+			left: -15px;
+			width: 32px;
+    		z-index: 99999999;
+		}
+
+		.senseCandidates {
+		    white-space: nowrap;
+		}
+
+/* End Popup*/
+
+/* Map pointer ADR + mobile*/
+	.mobile .adrPointer{
+		background: url('img/mapa/crosshair.png');
+		background-position: center center;
+		background-size: 100% auto;
+		width: 65px;
+		height: 65px;
+		margin: -41px 0 0 -32px;
+		color: #FF0000;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+	}
+/* End Map pointer */
+
+
+/* ---------------------------------------- */
+/* ---------- EINES ----------------------- */
+
+
+
+	.geobcn-tool
+	{
+		bottom: 20px;
+		right: 20px;
+		position: absolute;
+	}
+
+	.geobcn-tool button
+	{		
+		background-image: url("img/mapa/sprites-general.png");
+		background-repeat: no-repeat;
+		border: none; /* 1px solid #ddd;		*/
+		border-radius: inherit;
+		cursor: pointer;
+		display: block;
+		height: 32px;
+		margin: 0;
+		padding: 0;
+		width: 32px;
+	}
+	.mobile .geobcn-tool button
+	{
+		height: 45px;
+		width: 45px;
+		background-image: url("img/mapa/sprites-general-mob.png")
+	}
+	
+	/* Btn GeoLocation*/
+	.geoLocationContainer button {/*versió web*/
+		background-position: 0 -64px;
+	}	
+	.mobile .geoLocationContainer button {/*versió mobil*/
+		background-position: 0 -90px;
+	}
+	
+	
+	/* Landscape */
+	@media screen and (orientation:landscape) {
+
+		.mobile .geoLocationContainer {
+			top: 15px;
+			left:100px;
+			bottom: auto;
+			right: auto;
+		}
+
+	}
+
+	.geoLocationContainer button:hover, .mobile .geoLocationContainer button:hover  {background-color: rgba(0, 60, 136, 0.7);}
+	.geoLocationContainer .active, .mobile .geoLocationContainer .active {background-color: rgba(0, 60, 136, 0.7) !important;}
+	
+	.localitzant{
+		background-color: rgba(0, 60, 136, 0.7)!important;
+	}
+/* End Btn GeoLocation*/
+
+
+
+
+/* Btn Selecció Punt */
+
+
+	.seleccioPuntContainer button 
+	{
+		background-position: 0 -352px;
+	}
+	
+	.mobile .seleccioPuntContainer button 
+	{
+		background-position: 0 -495px;
+	}
+	
+	.seleccioPuntContainer button:hover
+	{
+		background-position: 0 -384px;
+	}
+	.mobile .seleccioPuntContainer button:hover
+	{
+		background-position: 0 -540px;
+	}
+
+	.mobile .seleccioPuntContainer{
+		bottom: auto;
+		left: 15px;
+		right: auto;
+		top: 20px;
+	}	
+	/* Landscape */
+	@media screen and (orientation:landscape) 
+	{
+		.mobile .seleccioPuntContainer{			
+			top: 15px;
+			left:160px;
+		}
+	}
+	
+	/*TODO: Actiu*/
+/* End Btn Selecció Punt/
+
+/* Btn Selecció Poligons */
+	.seleccioPoligonContainer {
+		position: absolute;
+		top: 230px;
+		left:15px;
+		background-color: rgba(255, 255, 255, 0.4);
+    	padding: 2px;
+    	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+	.mobile .seleccioPoligonContainer {
+		position: absolute;
+		top: 270px;
+		left: 15px;
+		background-color: rgba(255, 255, 255, 0.4);
+    	padding: 2px;
+    	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+	.seleccioPoligonContainer button {
+		background-color: rgba(0, 60, 136, 0.5);
+		background-image: url(img/sel-pol.png);
+		background-position: 7px 7px;
+    	background-repeat: no-repeat;
+		display: block;
+		height: 35px;
+		margin: 1px;
+		padding: 10px;
+		width: 35px;
+		cursor: pointer;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		border: medium none;
+	}
+
+
+	.mobile .seleccioPoligonContainer button{
+		background-color: rgba(0, 60, 136, 0.5);
+		background-image: url(img/sel-pol-high.png);
+		background-position: 10px 10px;
+		background-size: 25px 25px;
+    	background-repeat: no-repeat;
+		display: block;
+		height: 45px;
+		margin: 1px;
+		padding: 10px;
+		width: 45px;
+		cursor: pointer;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border: medium none;
+	}
+
+	/* Landscape */
+	@media screen and (orientation:landscape) {
+
+		.mobile .seleccioPoligonContainer {
+			position: absolute;
+			top: 15px;
+			left: 220px;
+			background-color: rgba(255, 255, 255, 0.4);
+	    	padding: 2px;
+	    	-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+
+	.mobile .seleccioPoligonContainer button{
+		background-color: rgba(0, 60, 136, 0.5);
+		background-image: url(img/sel-pol-high.png);
+		background-position: 10px 10px;
+		background-size: 25px 25px;
+    	background-repeat: no-repeat;
+		display: block;
+		height: 45px;
+		margin: 1px;
+		padding: 10px;
+		width: 45px;
+		cursor: pointer;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border: medium none;
+	}
+
+	}
+
+	.seleccioPoligonContainer button:hover, .mobile .seleccioPoligonContainer button:hover  {background-color: rgba(0, 60, 136, 0.7);}
+	.seleccioPoligonContainer button.active, .mobile .seleccioPoligonContainer button.active {background-color: rgba(0, 60, 136, 0.7) !important;}
+	
+	/*TODO: Actiu*/
+/* End Btn Selecció Poligons/
+
+	
+/* ---------- FI EINES -------------------- */	
+
+
+/*Candidats en general*/
+.geobcn .ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+    max-height: 225px;
+    overflow-y: scroll;
+}
+
+
+/*Candidats adreça popup web*/
+
+.geobcn-popup .adrCandidates{
+	line-height: 23px;
+    padding-left: 15px;
+    padding-right: 25px;
+    margin: 0;
+    max-height: 150px;
+}
+
+.geobcn-popup .adrCandidate{
+	cursor: pointer;
+	white-space: nowrap;
+}
+.geobcn-popup .adrCandidate:hover {color:#0080bb;}
+
+
+/*End Candidats adreça popup web*/
+
+/* OpenLayers */
+
+			.ol-zoom button, .ol-zoom-extent button, .ol-full-screen button {
+			    margin: 1px 0 0;
+			}
+			
+			.ol-zoom.ol-control, .ol-zoom.ol-control:hover {
+				border: medium none;
+				border-radius: 0;
+				bottom: 60px;
+				left: auto;
+				padding: 0;
+				right: 20px;
+				top: auto;
+				background-color: transparent;
+			}
+
+			.ol-full-screen {
+				left: 0.5em;
+				top: 0.5em;
+			}
+
+			.ol-zoom .ol-zoom-out {
+				background-image: url("img/mapa/sprites-general.png");
+				height: 32px;
+				text-indent: -9999px;
+				width: 32px;
+				background-position: 0 -224px;
+				
+			}			
+			.ol-zoom .ol-zoom-out:hover {
+				background-position: 0 -256px;
+			}
+
+
+			.ol-zoom .ol-zoom-in {
+				background-image: url("img/mapa/sprites-general.png");
+				height: 32px;
+				text-indent: -9999px;
+				width: 32px;
+				background-position: 0 -288px;
+			}			
+			.ol-zoom .ol-zoom-in:hover 
+			{
+				background-position: 0 -320px;				
+			}
+
+/*Amagar tooltip eines*/
+.ol-has-tooltip span,
+.ol-has-tooltip span:hover
+{
+	display:none !important;	
+}
+
+/* Override ui*/
+.geobcn .ui-accordion .ui-accordion-content {
+	padding: 1em 0.8em !important;
+}
+
+.ol-overlaycontainer-stopevent .ol-zoom button, .ol-overlaycontainer-stopevent .ol-zoom-extent button, .ol-overlaycontainer-stopevent .ol-full-screen button {
+    border-radius: 0;
+    cursor: pointer;
+    margin: 1px 0 0;
+}
+
+.mobile .ol-overlaycontainer-stopevent .ol-zoom button, .mobile .ol-overlaycontainer-stopevent .ol-zoom-extent button, .mobile .ol-overlaycontainer-stopevent .ol-full-screen button {
+    font-size: 24px !important;
+    height: 45px !important;
+    width: 45px !important;
+    cursor:pointer;
+}
+
+/*  Acordeon */
+
+.geobcn .ui-accordion-content label{
+	display: inline-block;
+    min-width: 90px;
+}
+
+.geobcn #gcAccordion_divCercadors h3 {
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.geobcn .ngac {
+	margin-left: 3px;
+	padding: 6px !important;
+	top: -3px;
+}
+
+.geobcn .btnCerca {
+	margin-top: 3px;
+}
+
+.geobcn .ui-accordion-content input[type=text],input[type=email],input[type=url],textarea {
+	width:45%;
+	margin-left:0;
+	margin-bottom:.5em;
+	background:#fff;
+	border:1px solid #d4d4d4;
+	line-height:1.5em;
+	font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	color:#666;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	box-shadow:none;
+	padding:3px 6px;
+}
+
+.geobcn .ui-accordion-content input[type=text]:focus,input[type=email]:focus,input[type=url]:focus,textarea:focus {
+	-moz-box-shadow:0 0 3px #888;
+	-webkit-box-shadow:0 0 3px #888;
+	box-shadow:0 0 3px #888;
+	-webkit-appearance:none;
+	outline:0;
+	border-color:#888;
+}
+
+.geobcn .ui-accordion-content input[type=text]:invalid,input[type=email]:invalid,input[type=url]:invalid,textarea:invalid {
+	outline:none;
+	background-color:#f6e7eb;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	box-shadow:none;
+	border-color:#fbc2c4;
+}
+
+.geobcn .ui-accordion-content input[type=text],input[type=email],input[type=url] {
+	max-width:300px;
+	min-width:120px;
+}
+
+/* zoom */
+.mobile .geobcn-tool.ol-zoom  {
+	bottom: auto;
+	left: 15px;
+	right: auto;
+	top: 15px;
+}
+
+.mobile .geobcn-tool.ol-zoom button.ol-zoom-in 
+{
+	background-position: 0 -405px;
+    
+}
+.mobile .geobcn-tool.ol-zoom button.ol-zoom-in:hover 
+{
+	background-position: 0 -450px;    
+}
+
+.mobile .geobcn-tool.ol-zoom button.ol-zoom-out {
+    background-position: 0 -315px;
+}
+.mobile .geobcn-tool.ol-zoom button.ol-zoom-out:hover {
+    background-position: 0 -360px;
+}
+
+/* Landscape */
+	@media screen and (orientation:landscape) {
+
+		.mobile .geobcn-tool.ol-zoom {
+			bottom: auto;
+			left: 15px;
+			right: auto;
+			top: 15px;
+		}
+
+	}
+	
+/*loading*/
+
+
+.geobcn-autocomplete.loading{
+    background-image: url("img/cercant.gif");
+    background-position: right 4px center;
+    background-repeat: no-repeat;
+    border: 1px solid #bbb;
+}
+
+.geobcn-popup .loading{
+	background-image: url("img/loading.gif");
+    background-position: 5px 16px;
+    background-repeat: no-repeat;
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 8px;
+    padding-top: 20px;
+	width: auto;
+	white-space:nowrap;
+}
+
+.mobile .geobcn-popup .loading{
+    background-position: 5px 4px;
+    height: 30px;
+    padding-top: 7px;
+}
+/**/
+.errorInput {
+	color: red;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    padding-left: 90px;
+    position: relative;
+    top: -3px;
+}

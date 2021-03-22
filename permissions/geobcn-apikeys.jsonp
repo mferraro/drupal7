@@ -1,0 +1,362 @@
+getPermissions([{
+  "c0wlnlegQvfhYsB1XGDylryibRT1dTvE": {
+  "status": true,
+  "customer": "Barcelona Cultura"
+  },
+  "ffa170c141279e8a41c3601b6349ee15": {
+  "status": true,
+  "customer": "Tests DI"
+  },
+  "505367a14ede7c1ebc7e9bcdae88b8ba": {
+  "status": true,
+  "customer": "ebmpuigmal"
+  },
+  "b6831bc7613d025ecfc0a0626d9b958c": {
+  "status": true,
+  "customer": "ebmportalnou"
+  },
+  "abf0db0c8c3d9fa2380b34dbe392bdfc": {
+  "status": true,
+  "customer": "ebmmontaber"
+  },
+  "c27282527d52f327b923d978ed238312": {
+  "status": true,
+  "customer": "ebmlamar"
+  },
+  "0f8b1d90ffd5966ab3c49c5272692033": {
+  "status": true,
+  "customer": "ebmcarabassa"
+  },
+  "dd87ccd661404bf72d92594e5c0dcea1": {
+  "status": true,
+  "customer": "ebmcanigo"
+  },
+  "c8b3680f86f889983fc99140daf0597b": {
+  "status": true,
+  "customer": "ebmcadi"
+  },
+  "66a122d19d2047e8bc6ae96624f78209": {
+  "status": true,
+  "customer": "ebmbarrufets"
+  },
+  "5827d98e575e3192a2727612f9a16531": {
+  "status": true,
+  "customer": "ebmcasadelsnens"
+  },
+  "bff8ba921958ebdb4d2ab4bf443d65aa": {
+  "status": true,
+  "customer": "ebmelroure"
+  },
+  "1b3dae0d0b5be0cdb2001800065b983a": {
+  "status": true,
+  "customer": "ebmelstrestombs"
+  },
+  "886ce5e65084c89619d74be0e0daf094": {
+  "status": true,
+  "customer": "ebmeltrendelfortpienc"
+  },
+  "912ff78d0cd0029587c25059851cad27": {
+  "status": true,
+  "customer": "ebmencants"
+  },
+  "0b68920d28c388624ccdeba5a016a9df": {
+  "status": true,
+  "customer": "ebmlafassina"
+  },
+  "78b72de125db2c76467a76db9db0ed16": {
+  "status": true,
+  "customer": "larbretdeleixample"
+  },
+  "3bc9f912b0496d3f687827a2093ad282": {
+  "status": true,
+  "customer": "ebmlondres"
+  },
+  "1d32cf6b87c443ac9c4ae0e6ef9c380c": {
+  "status": true,
+  "customer": "ebmaurora"
+  },
+  "e40652898e72c7876962cffbf67d4557": {
+  "status": true,
+  "customer": "ebmcaspolino"
+  },
+  "f7a15e135f0322754a73b619493ae66f": {
+  "status": true,
+  "customer": "ebmEnxaneta"
+  },
+  "0a723dacd4e827a4c5a65ab0998d0b99": {
+  "status": true,
+  "customer": "ebmGalatea"
+  },
+  "8aa7a5e3cbe3e75ccfbba21edd3e5548": {
+  "status": true,
+  "customer": "ebmGracia"
+  },
+  "2213364d55cdf7212efcccc90d150ef9": {
+  "status": true,
+  "customer": "ebmLaFontana"
+  },
+  "fb3d834dcf93362410d8e6382e40f945": {
+  "status": true,
+  "customer": "ebmPetitUnivers"
+  },
+  "f9e68f652afd7f5d1ca4fd173b7648fc": {
+  "status": true,
+  "customer": "ebmSantMedir"
+  },
+  "ed1addcf249167a9bbad6d12254308e5": {
+  "status": true,
+  "customer": "ebmTrencadís"
+  },
+  "0fd30e379e6a3023149cc96f4f3f55db": {
+  "status": true,
+  "customer": "ebmalbi"
+  },
+  "12b4b64744d12b13a682c7354d0bfd44": {
+  "status": true,
+  "customer": "ebmcargol"
+  },
+  "19014db31a451d4bdd964884ca14489b": {
+  "status": true,
+  "customer": "ebmelgatnegre"
+  },
+  "4b7e49bee0b5b4f34587e4b47389c050": {
+  "status": true,
+  "customer": "ebmguinardo"
+  },
+  "c11a96c504d1b8cb6cdbd8c524c33a02": {
+  "status": true,
+  "customer": "ebmarboc"
+  },
+  "cfc71114e44cd594473b28549160c6ab": {
+  "status": true,
+  "customer": "ebmArquet"
+  },
+  "17431e631d655282e778378bcb6d7fb1": {
+  "status": true,
+  "customer": "ebmHarmonia"
+  },
+  "58c928e81a8e9b6e3af76bbc15a90adc": {
+  "status": true,
+  "customer": "ebmLlardInfants"
+  },
+  "dcb9ccab57205237b578e6119e1936fd": {
+  "status": true,
+  "customer": "ebmMarina"
+  },
+  "ba1dd06567d4e48acb4fce784ff28220": {
+  "status": true,
+  "customer": "ebmMontserrat"
+  },
+  "30750a33a9a95b0a98993f52f7b3cddf": {
+  "status": true,
+  "customer": "ebmSantGenís"
+  },
+  "677752858a4b2aaab8b5b01bc602a9d0": {
+  "status": true,
+  "customer": "ebmTresTurons"
+  },
+  "61d5366fe2ad279059da56dc042256e1": {
+  "status": true,
+  "customer": "ebmTrisTras"
+  },
+  "e9fca4c329163a3d60b8c29955b9deab": {
+  "status": true,
+  "customer": "ebmValldaura"
+  },
+  "6be06d9a4f18aaf29689d8fae0eafdb1": {
+  "status": true,
+  "customer": "ebmXarlot"
+  },
+  "7100e49533671d8b05ec30cbcf3fa276": {
+  "status": true,
+  "customer": "ebmCanBacardí"
+  },
+  "a6d797bdf0f55b2114bf8d7ecfe473db": {
+  "status": true,
+  "customer": "ebmCanBruixa"
+  },
+  "bdaec0b4323a910f384413f9c8ab9ad6": {
+  "status": true,
+  "customer": "ebmcannovell"
+  },
+  "4360c7e3e365f0db651b7aafc866349a": {
+  "status": true,
+  "customer": "ebmXiroi"
+  },
+  "bb95cfc379325791e1a3f71ae7a8d4b9": {
+  "status": true,
+  "customer": "ebmcanodrom"
+  },
+  "079b6cbdf845319582d4823f23d05eeb": {
+  "status": true,
+  "customer": "ebmcaminetdelbesos"
+  },
+  "80816b6aa2be4f9a181013d8bd2a35b3": {
+  "status": true,
+  "customer": "ebmelpalomar"
+  },
+  "441622caee62d708b456f8402d15adde": {
+  "status": true,
+  "customer": "ebmelparcdepegaso"
+  },
+  "05dfc4bf0a7de84af5344bb22e44ee06": {
+  "status": true,
+  "customer": "ebmelspatufetsdenavas"
+  },
+  "94e48b10d9976f7232d3aa6f805cb345": {
+  "status": true,
+  "customer": "ebmeltrendelfortpienc"
+  },
+  "10b980a7088c80ef9ae3f9c35eecea81": {
+  "status": true,
+  "customer": "ebmicaria"
+  },
+  "8a6f65be41da33e7c6c7eb9d88a19dbe": {
+  "status": true,
+  "customer": "ebmfiladora"
+  },
+  "1bae40debab268d252f6ef9981bae755": {
+  "status": true,
+  "customer": "ebmquatretorres"
+  },
+  "634bfabd7c8c474175daa0ae44bfa4bb": {
+  "status": true,
+  "customer": "ebmmanigua"
+  },
+  "d1f6b13b44d6cd78bd965f07caacf879": {
+  "status": true,
+  "customer": "ebmcancanet"
+  },
+  "0c3429d763fe0139accfc24ff4fca5c4": {
+  "status": true,
+  "customer": "ebmcancaralleu"
+  },
+  "8bf1a98fc2929beffd510cb34de30ea0": {
+  "status": true,
+  "customer": "ebmelputget"
+  },
+  "5fb6cb96a3f254aa5fab163c79cdbc51": {
+  "status": true,
+  "customer": "ebmtramviablau"
+  },
+  "196e2dcb91e093da9b62f11d8142e3b1": {
+  "status": true,
+  "customer": "ebmlapuput"
+  },
+  "a500d16ae26ab8923f2bff881b68f657": {
+  "status": true,
+  "customer": "ebmoreneta"
+  },
+  "c45a18e44b5ebc1d821cd0691ec25e18": {
+  "status": true,
+  "customer": "ebmbellmunt"
+  },
+  "55ac6c21959a9896486c9035e3c52890": {
+  "status": true,
+  "customer": "ebmcollserola"
+  },
+  "1334859229182270233f730468b36620": {
+  "status": true,
+  "customer": "ebmelcotxet"
+  },
+  "45fafb623c2d14708a4f51a69d075a8a": {
+  "status": true,
+  "customer": "ebmelfil"
+  },
+  "43ccafb5eb6bb24ad02f9149f974fbbc": {
+  "status": true,
+  "customer": "ebmeltimbal"
+  },
+  "a67fae9893d78467555108e7357dce1b": {
+  "status": true,
+  "customer": "ebmforestier"
+  },
+  "657955e85e2fd17baa963f38d916f62b": {
+  "status": true,
+  "customer": "ebmguinbo"
+  },
+  "6340f747245beb94a827726b9e9ce362": {
+  "status": true,
+  "customer": "ebmlesquirol"
+  },
+  "c66a519abc9894e26c884521b72e1020": {
+  "status": true,
+  "customer": "ebmnic"
+  },
+  "5857d5d9cee37736be89accb93832f0c": {
+  "status": true,
+  "customer": "ebmniuinfants"
+  },
+  "7665ea692ce8eae754ae41c37041b1f5": {
+  "status": true,
+  "customer": "ebmpau"
+  },
+  "80581ac3bec009243289355527369474": {
+  "status": true,
+  "customer": "ebmcampdelarpa"
+  },
+  "01997f0401132c69be399d47ecd3227b": {
+  "status": true,
+  "customer": "ebmcobi"
+  },
+  "58acf22ea50f801ba541b549ff48200e": {
+  "status": true,
+  "customer": "ebmdiagonalmar"
+  },
+  "ccb56f651d26cc72484ac717553582eb": {
+  "status": true,
+  "customer": "ebmdolorscanals"
+  },
+  "4af5aeb9ab13efe362945ee81c55dcde": {
+  "status": true,
+  "customer": "ebmbressolpoblenou"
+  },
+  "3a77a825612c76b4a887dde99cb17465": {
+  "status": true,
+  "customer": "ebmclotdelamel"
+  },
+  "315445bb4293b9d2b8d7b8415091c400": {
+  "status": true,
+  "customer": "ebmgronxador"
+  },
+  "84ec7bbac0b5cf4470951f9cc7e745ce": {
+  "status": true,
+  "customer": "ebmpetitprincep"
+  },
+  "99b359d5f0f3b19fc703ba5ed5cafdab": {
+  "status": true,
+  "customer": "ebmxaletpaperera"
+  },
+  "753657c9cdadde6d313a53a0642f240f": {
+  "status": true,
+  "customer": "ebmesquitx"
+  },
+  "010beef3085b86516134033a22f7849d": {
+  "status": true,
+  "customer": "ebmjupiter"
+  },
+  "32b64b2ed3ae72e14a680d301b18e854": {
+  "status": true,
+  "customer": "ebmfarinera"
+  },
+  "2081078966ff4b0153181ac0ccdc15ea": {
+  "status": true,
+  "customer": "ebmalianca"
+  },
+  "669a25c7b33fed0e4902d825a069a74b": {
+  "status": true,
+  "customer": "ebmmarxica"
+  },
+  "5edc6939ebd25693b5d2c0ad0a747d22": {
+  "status": true,
+  "customer": "ebmvernedasantmarti"
+  },
+  "eac71d569eba273274c1208ad3975adf": {
+  "status": true,
+  "customer": "ebmestacio"
+  },
+  "cce7f0d6407db60c6b9ef5764e42fc9d": {
+  "status": true,
+  "customer": "ebmmargallo"
+  }}
+])

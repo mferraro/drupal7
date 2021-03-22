@@ -1,5 +1,81 @@
 # Drupal VM Changelog
 
+## 4.9.1 (2018-10-10)
+
+### Breaking Changes
+
+N/A
+
+### New/changed variables in default.config.yml
+
+  * The Devel module dependency in `drupal_composer_dependencies` was changed from `1.x-dev` (which no longer seems to work) to `^1.2`.
+
+### Improvements
+
+  * #1827: Improve Tideways documentation.
+  * #1589: Add name to Ansible provisioner.
+  * #1823: Remove Debian 8 CI test, Debian 9 suffices.
+  * Updated roles: solr, ruby, varnish, nodejs, java, mysql, composer, php, firewall, apache, and many others with fixes for Ansible 2.7+ and linting issues.
+
+### Bugfixes
+
+  * #1761: Fix deprecation warnings in Ansible 2.7.0.
+  * #1822: Update composer role to fix CentOS 7 Composer download bug.
+  * #1743, #1831: Use stable version of Devel via Composer.
+
+
+## 4.9.0 "Creation of Tron" (2018-06-01)
+
+This release improves compatibility with Ansible 2.4, 2.5 and beyond, and updates almost every Ansible role in Drupal VM.
+
+### Breaking Changes
+
+N/A
+
+### New/changed variables in default.config.yml
+
+  - Removed unused `php_xdebug_cli_enable` variable.
+  - Added `php_xdebug_cli_disable: yes`.
+
+### Improvements
+
+  * #619, #1720: Add documentation for using Eclipse and Visual Studio Code with xdebug.
+  * #1552: Better PHP 7.2 compatibility with XDebug.
+  * #1553: Fix use of deprecated 'include' syntax in Ansible playbooks.
+  * #1566: Remove unused `php_xdebug_cli_enable` variable.
+  * #1778: Remove Ansible 2.2 compatibility-related tasks.
+  * Updated roles: selenium, php-tideways, firewall, solr, nginx, drupal console, apache, varnish, postgres, new relic, java, composer, php, mysql, blackfire, elasticsearch, drush, drupal, node.js, php-redis, php-tideways, php-versions, xhprof, redis, security, ruby.
+
+### Bugfixes
+
+  * #1736: Better Ansible version parsing in Vagrantfile.
+  * #1654: Make sure Tideways can be installed.
+  * #1518: Improve use of old versions of Solr on newer OS releases.
+
+
+## 4.8.1 (2018-03-10)
+
+### Breaking Changes
+
+Drupal VM now requires Ansible 2.4+ if you are using the version installed on your host. (Used to require 2.2+).
+
+### New/changed variables in default.config.yml
+
+  * `drupalvm_ansible_version_min` is now `2.4`. Make sure to upgrade if you're on an older version!
+
+### Improvements
+
+  * #1701: Ansible required version is TOO DARN LOW!
+  * #1682: Add documentation for setting up Atom with XDebug.
+  * Updated roles: git, ruby, apache-php-fpm, solr, security, java, git, php.
+
+### Bugfixes
+
+  * #1692: Fix the install-drupal command on the Docker image.
+  * #1704: Ansible version check is done on host even when force_ansible_local is true.
+  * #1708: Selenium paths value in docs should be quoted.
+
+
 ## 4.8.0 "Tower Music / Let Us Pray" (2018-01-30)
 
 This release is all about Drush. Please read my blog post [Drupal VM 4.8 and Drush 9.0.0 - Some major changes](https://www.jeffgeerling.com/blog/2018/drupal-vm-48-and-drush-900-some-major-changes) for details and more background.

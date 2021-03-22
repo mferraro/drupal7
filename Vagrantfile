@@ -8,7 +8,7 @@ host_drupalvm_dir = File.dirname(File.expand_path(__FILE__))
 host_project_dir = ENV['DRUPALVM_PROJECT_ROOT'] || host_drupalvm_dir
 host_config_dir = ENV['DRUPALVM_CONFIG_DIR'] ? "#{host_project_dir}/#{ENV['DRUPALVM_CONFIG_DIR']}" : host_project_dir
 
-# Absolute paths on the guest machine.
+# Absolute paths on the guest machvagrant-hostmanagerine.
 guest_project_dir = '/vagrant'
 guest_drupalvm_dir = ENV['DRUPALVM_DIR'] ? "/vagrant/#{ENV['DRUPALVM_DIR']}" : guest_project_dir
 guest_config_dir = ENV['DRUPALVM_CONFIG_DIR'] ? "/vagrant/#{ENV['DRUPALVM_CONFIG_DIR']}" : guest_project_dir
@@ -31,13 +31,15 @@ provisioner = vconfig['force_ansible_local'] ? :ansible_local : vagrant_provisio
 if provisioner == :ansible
   playbook = "#{host_drupalvm_dir}/provisioning/playbook.yml"
   config_dir = host_config_dir
+
+  # Verify Ansible version requirement.
+  require_ansible_version ">= #{vconfig['drupalvm_ansible_version_min']}"
 else
   playbook = "#{guest_drupalvm_dir}/provisioning/playbook.yml"
   config_dir = guest_config_dir
 end
 
-# Verify version requirements.
-require_ansible_version ">= #{vconfig['drupalvm_ansible_version_min']}"
+# Verify Vagrant version requirement.
 Vagrant.require_version ">= #{vconfig['drupalvm_vagrant_version_min']}"
 
 ensure_plugins(vconfig['vagrant_plugins'])
@@ -102,7 +104,8 @@ Vagrant.configure('2') do |config|
     config.vm.synced_folder synced_folder.fetch('local_path'), synced_folder.fetch('destination'), options
   end
 
-  config.vm.provision provisioner do |ansible|
+  config.vm.provision 'drupalvm', type: provisioner do |ansible|
+    # ansible.compatibility_mode = '2.0'
     ansible.playbook = playbook
     ansible.extra_vars = {
       config_dir: config_dir,
@@ -163,11 +166,16 @@ Vagrant.configure('2') do |config|
   end
 
   #Matteo
+  # config.vm.forward_port 8889
   config.vm.network :forwarded_port, guest: 8889, host: 8889, id: "jasmine"
   config.vm.provision "shell", name: "iptables", inline: <<-SHELL
     sudo iptables -I INPUT -p tcp --dport 8889 -j ACCEPT
   SHELL
-  # config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8889 -j ACCEPT"
-  # config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8888 -j ACCEPT"
+  # config.vm.network :forwarded_port, guest: 3000, host: 3000, id: "mind"
+  # config.vm.provision "shell", name: "iptables", inline: <<-SHELL
+  #  sudo iptables -I INPUT -p tcp --dport 3000 -j ACCEPT
+  #SHELL
+  #config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8889 -j ACCEPT"
+  #config.vm.provision "shell", inline: "", run: "sudo iptables -I INPUT -p tcp --dport 8888 -j ACCEPT"
 
 end

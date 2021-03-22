@@ -1,0 +1,37 @@
+<HTML>
+
+<HEAD>
+
+  <style>
+                                                                                                              #map {
+      height: 300px;
+      width: 100%;
+    }
+  </style>
+  <TITLE>Test BCN Planol</TITLE>
+  <script type="text/javascript" src="https://www.barcelona.cat/api-management/javascripts/geobcn.min.js"></script>
+  <script type="text/javascript" src="../js/bcn_service_planol.js?v=1"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+<div id="map"></div>
+
+<script>
+  // coords_planol_x : "30043.099"
+  // coords_planol_y:"83185.514"
+
+  // coords_x:"41.395316446228"
+  // coords_y:"2.1620430159011"
+
+</script>
+
+<script type="text/javascript">
+  // Initialize map after scripts loaded.
+  if (typeof geobcn !== "undefined") {
+    geobcn.apiManager("Wm6AyzelmDfIIm6K3LbnoiuzIMxwiB", "v1", initMap);
+  }
+</script>
+</BODY>
+
+</HTML>

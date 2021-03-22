@@ -1,8 +1,0 @@
-{
-    "appname":"CAMBIAME",
-    "username": "username",
-    "workspace": "/home/{{cookiecutter.username}}/workspace/" ,
-    "_copy_without_render": [
-            "*.html"
-    ]
-}

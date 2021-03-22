@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ajax lang="ca">
+    <detall>
+        <share href="None" label="Museu Picasso">92086001333</share>
+        <entity_id label="entity_id"><![CDATA[92086001333]]></entity_id>
+        <entity_type label=""><![CDATA[EQ]]></entity_type>
+        <lastupdatedate label="">
+            <![CDATA[2020-04-06 14:35:55.206504+02:00]]></lastupdatedate>
+        <name label="Nom"><![CDATA[Museu Picasso]]></name>
+        <comments label="">
+            <![CDATA[<br>Els Palaus Aguilar (1963), Baró de Castellet (1970), Palau Meca (1982), Palau Finestres i Casa Mauri (1999) formen el conjunt del Museu Picasso.<BR><BR>El Museu té la més important i exhaustiva col·lecció de l'obra de joventut i formació de Pablo Picasso, i molt especialment la que va realitzar entre 1895 i 1904, període en que va residir a Barcelona. Pintura, dibuix, ceràmica i obra gràfica representatius de l'obra posterior de Picasso.<BR><BR>El Museu disposa de servei de visites comentades.]]></comments>
+        <street label="Adreça"><![CDATA[C Montcada]]></street>
+        <streetnum_i label="Núm"><![CDATA[15]]></streetnum_i>
+        <district><![CDATA[Ciutat Vella]]></district>
+        <barri label="Àrea">
+            <![CDATA[Sant Pere, Santa Caterina i la Ribera]]></barri>
+        <floor><![CDATA[bxs]]></floor>
+        <postalcode label="Codi postal"><![CDATA[08003]]></postalcode>
+        <city label="Ciutat"><![CDATA[Barcelona]]></city>
+        <coordaddressx><![CDATA[431510.7557318577]]></coordaddressx>
+        <coordaddressy><![CDATA[4581841.242445842]]></coordaddressy>
+        <gmapx><![CDATA[41.385183820661204]]></gmapx>
+        <gmapy><![CDATA[2.180852344790627]]></gmapy>
+        <comsiva>
+            <![CDATA[https://com-shi-va.barcelona.cat/ca/planifica_la_teva_ruta?desde=&hasta=41.385183820661204,2.180852344790627]]></comsiva>
+        <addresses>
+            <item>
+                <street label="Adreça"><![CDATA[C Montcada]]></street>
+                <streetnum_i label="Núm"><![CDATA[15]]></streetnum_i>
+                <district><![CDATA[Ciutat Vella]]></district>
+                <barri label="Àrea">
+                    <![CDATA[Sant Pere, Santa Caterina i la Ribera]]></barri>
+                <floor><![CDATA[bxs]]></floor>
+                <postalcode label="Codi postal"><![CDATA[08003]]></postalcode>
+                <city label="Ciutat"><![CDATA[Barcelona]]></city>
+                <coordaddressx><![CDATA[431510.7557318577]]></coordaddressx>
+                <coordaddressy><![CDATA[4581841.242445842]]></coordaddressy>
+                <gmapx><![CDATA[41.385183820661204]]></gmapx>
+                <gmapy><![CDATA[2.180852344790627]]></gmapy>
+                <comsiva>
+                    <![CDATA[https://com-shi-va.barcelona.cat/ca/planifica_la_teva_ruta?desde=&hasta=41.385183820661204,2.180852344790627]]></comsiva>
+            </item>
+        </addresses>
+        <phones>
+            <item>
+                <phonenumber><![CDATA[932563000]]></phonenumber>
+                <phone_code><![CDATA[00020003]]></phone_code>
+                <label><![CDATA[Centraleta]]></label>
+            </item>
+            <item>
+                <phonenumber><![CDATA[933150102]]></phonenumber>
+                <phone_code><![CDATA[00020027]]></phone_code>
+                <label><![CDATA[Fax]]></label>
+            </item>
+            <item>
+                <phonenumber><![CDATA[932563022]]></phonenumber>
+                <phone_code><![CDATA[00020040]]></phone_code>
+                <label><![CDATA[Reserves]]></label>
+            </item>
+        </phones>
+        <interestinfo>
+            <item>
+                <interinfo><![CDATA[museupicasso@bcn.cat]]></interinfo>
+                <intercode><![CDATA[00100002]]></intercode>
+                <label><![CDATA[E-mail]]></label>
+            </item>
+            <item>
+                <interinfo><![CDATA[museupicasso_reserves@bcn.cat]]></interinfo>
+                <intercode><![CDATA[00100002]]></intercode>
+                <label><![CDATA[E-mail]]></label>
+            </item>
+            <item>
+                <interinfo><![CDATA[www.museupicasso.bcn.cat]]></interinfo>
+                <intercode><![CDATA[00100003]]></intercode>
+                <label><![CDATA[Web]]></label>
+            </item>
+        </interestinfo>
+        <accessibility label="Accessibilitat">
+            <![CDATA[Accessible per a persones amb discapacitat física]]></accessibility>
+        <titularitat label="Titularitat"><![CDATA[Public center]]></titularitat>
+        <serveis/>
+        <atencio_eq label="Atenció">
+            <![CDATA[Tancat des del 13 de març amb una vigència mínima de 15 dies]]></atencio_eq>
+        <internetref>
+            <item>
+                <ireflabel><![CDATA[Photo]]></ireflabel>
+                <irefvalue>
+                    <![CDATA[https://nasia-dev.s3.amazonaws.com/local-josemi/media/picasso.c9f1d301b.jpeg]]></irefvalue>
+            </item>
+        </internetref>
+        <relations label="Altres" labelsection="Seccions d'aquest equipament">
+            <section href="centre-de-coneixement-i-recerca_99400264870">
+                <entity_id><![CDATA[99400264870]]></entity_id>
+                <reltype><![CDATA[1]]></reltype>
+                <direct><![CDATA[És institució de la secció]]></direct>
+                <sectionname>
+                    <![CDATA[Centre de Coneixement i Recerca]]></sectionname>
+                <institutionname><![CDATA[Museu Picasso]]></institutionname>
+            </section>
+            <section href="llibreria-laie_98034141137">
+                <entity_id><![CDATA[98034141137]]></entity_id>
+                <reltype><![CDATA[1]]></reltype>
+                <direct><![CDATA[És institució de la secció]]></direct>
+                <sectionname><![CDATA[Llibreria Laie]]></sectionname>
+                <institutionname><![CDATA[Museu Picasso]]></institutionname>
+            </section>
+            <section href="biblioteca_92086001334">
+                <entity_id><![CDATA[92086001334]]></entity_id>
+                <reltype><![CDATA[1]]></reltype>
+                <direct><![CDATA[És institució de la secció]]></direct>
+                <sectionname><![CDATA[Biblioteca]]></sectionname>
+                <institutionname><![CDATA[Museu Picasso]]></institutionname>
+            </section>
+            <section href="sala-d'actes_92086001332">
+                <entity_id><![CDATA[92086001332]]></entity_id>
+                <reltype><![CDATA[1]]></reltype>
+                <direct><![CDATA[És institució de la secció]]></direct>
+                <sectionname><![CDATA[Sala d'Actes]]></sectionname>
+                <institutionname><![CDATA[Museu Picasso]]></institutionname>
+            </section>
+        </relations>
+        <timetable>
+            <horari label="Horaris">
+                <periode>
+                    <![CDATA[del 16 de març<br/>al 31 d'octubre]]></periode>
+                <dies>
+                    <![CDATA[dilluns<br/>excepte 13 de maig<br/> 20 de maig]]></dies>
+                <hores><![CDATA[de 10:00 h a 17:00 h]]></hores>
+                <preu label="Preus">
+                    <![CDATA[Entrada general de: 12 € <br/>(col·lecció permanent)<br/> <p style="margin:0"><b>Reduïda</b> (caldrà acreditar la condició): 7 € (col·lecció permanent)</p><p style="margin:0">- Persones de 18 a 25 anys<br/>- Persones de 65 anys o més<br/>- Titulars targeta rosa reduïda <br/>- Persones a l'atur<br/>- Titulars del carnet de Biblioteques de Barcelona </p><p style="margin:0"><b>Exposicions temporals</b>:<br/>- Entrada general: 6.50 €<br/>- Entrada reduïda: 4.5 €</p><p style="margin:0"><b>Col·lecció permanent+ Exposició temporal:</b><br/>- Entrada general: 14 €<br/>- Entrada reduïda: 7.50 €</p><p style="margin:0"><b>Articket</b>: 30 €</p><p style="margin:0"><b>Carnet del Museu</b><br/>- Individual: 15 € (Col·lecció + exposició temporal)</p><p style="margin:0"><b>Gratuïta</b> (caldrà acreditar la condició):<br/>- El 1r diumenge de cada mes<br/>- Tots els dijous de 18 a 21.30 h<br/>- Menors de 18 anys<br/>- Estudiants universitaris<br/>- Titulars targeta rosa gratuïta <br/>- Titulars passi metropolità dacompanyant dun discapacitat<br/>- Carnet de l'ICOM<br/>- Professors  (reserva imprescindible)<br/>- Els guies turístics en lexercici de la seva feina<br/>- Els periodistes acreditats<br/>- 12 de febrer (Santa Eulàlia)<br/>- 18 de maig (Dia Internacional dels Museus)<br/>- 18 de maig (Nit dels Museus: gratuït de 19 a 1 h)<br/>- 24  de setembre (la Mercè)</p>]]></preu>
+                <observacions>
+                    <![CDATA[<br/>Les entrades a les exposicions es poden comprar on-line al web del Museu.<p style="margin:0">El Carnet del Museu permet el lliure accés a tot el museu sense passar per taquilles, durant un any des de la data de l'adquisició.</p><p style="margin:0">Les visites en grup només es podran fer amb concertació prèvia per telèfon, fax o correu electrònic.</p><p style="margin:0">Un responsable de grup per cada 10 visitants pot tenir l'entrada gratuïta.<br/><br/>Visites accessibles regulars per a<br/> persones amb discapacitats auditives<br/>o visuals i per als seus acompanyants.<br/>El tercer dijous de cada mes, a les 18:30 h<br/>Amb reserva al tel. 932562997,<br/> de dilluns a divendres, de 9 a 14 h</p>]]></observacions>
+            </horari>
+            <horari label="Horaris">
+                <dies>
+                    <![CDATA[dimarts, dimecres, divendres, dissabtes i diumenges<br/>excepte 1 de maig<br/> 24 de juny]]></dies>
+                <hores><![CDATA[de 09:00 h a 20:30 h]]></hores>
+            </horari>
+            <horari label="Horaris">
+                <dies><![CDATA[dijous]]></dies>
+                <hores><![CDATA[de 09:00 h a 21:30 h]]></hores>
+            </horari>
+            <horari label="Horaris">
+                <periode>
+                    <![CDATA[de l'1 de novembre<br/>al 15 de març]]></periode>
+                <dies>
+                    <![CDATA[dimarts, dimecres, divendres, dissabtes i diumenges<br/>excepte 24 de desembre<br/> 25 de desembre<br/> 31 de desembre<br/> 1 de gener<br/> 5 de gener]]></dies>
+                <hores><![CDATA[de 09:00 h a 19:00 h]]></hores>
+            </horari>
+            <horari label="Horaris">
+                <dies><![CDATA[24 de desembre<br/> 31 de desembre]]></dies>
+                <hores><![CDATA[de 09:00 h a 14:00 h]]></hores>
+            </horari>
+            <horari label="Horaris">
+                <dies><![CDATA[5 de gener]]></dies>
+                <hores><![CDATA[de 09:00 h a 17:00 h]]></hores>
+            </horari>
+            <horari label="Horaris">
+                <dies><![CDATA[dijous]]></dies>
+                <hores><![CDATA[de 09:00 h a 21:30 h]]></hores>
+            </horari>
+        </timetable>
+        <gmapx label="Lat"><![CDATA[41.385183820661204]]></gmapx>
+        <gmapy label="Long"><![CDATA[2.180852344790627]]></gmapy>
+        <comsiva label="">
+            <![CDATA[https://com-shi-va.barcelona.cat/ca/planifica_la_teva_ruta?desde=&hasta=41.385183820661204,2.180852344790627]]></comsiva>
+        <type label="Tipus"><![CDATA[Entities and equipment]]></type>
+        <link href="">
+            <![CDATA[https://www.google.com/maps/dir/Current+Location/41.385183820661204,2.180852344790627]]></link>
+        <recommend label="ELS USUARIS QUE HAN VIST AIXÒ, TAMBE HAN VIST..."/>
+        <ageq label="Actes que s'hi celebren">
+            <item href="exposicio-permanent-del-museu-picasso_1299140408.html">
+                <entity_id label="entity_id"><![CDATA[1299140408]]></entity_id>
+                <entity_type label=""><![CDATA[AG]]></entity_type>
+                <lastupdatedate label="">
+                    <![CDATA[2018-05-10 10:39:42+02:00]]></lastupdatedate>
+                <actname label="">
+                    <![CDATA[Exposició permanent del Museu Picasso]]></actname>
+                <tickettype_code label=""><![CDATA[Pagament]]></tickettype_code>
+                <acttype label="E"><![CDATA[]]></acttype>
+                <warning label=""><![CDATA[]]></warning>
+                <comments label="">
+                    <![CDATA[És la col·lecció més important del món dels períodes de formació de l'artista.<BR>Destaquen l'obra de l'època blava, la de l'època rosa, la sèrie interpretativa de 'Las Meninas' de Velázquez de 1957, les ceràmiques i l'obra gravada.<BR><BR>El Museu Picasso de Barcelona acull, <b>fins maig de 2013,</b> dos obres en prèstec temporal:<BR>L&acute;oli Dues dones davant d&acute;una finestra (1927) i l&acute;estudi a llapis i tinta xinesa Mademoiselle Léonie (1910), de Pablo Picasso.]]></comments>
+                <institution_id label="">
+                    <![CDATA[92086001333]]></institution_id>
+                <institutionname href="museu-picasso_92086001333.html"
+                                 label="On:">
+                    <![CDATA[Museu Picasso]]></institutionname>
+                <street label="Adreça"><![CDATA[C Montcada]]></street>
+                <district><![CDATA[Ciutat Vella]]></district>
+                <postalcode label="Codi postal"><![CDATA[08003]]></postalcode>
+                <city label="Ciutat"><![CDATA[Barcelona]]></city>
+                <coordaddressx><![CDATA[]]></coordaddressx>
+                <coordaddressy><![CDATA[]]></coordaddressy>
+                <addresses>
+                    <item>
+                        <street label="Adreça"><![CDATA[C Montcada]]></street>
+                        <streetnum_i label="Núm"><![CDATA[15]]></streetnum_i>
+                        <district><![CDATA[Ciutat Vella]]></district>
+                        <barri label="Àrea">
+                            <![CDATA[Sant Pere, Santa Caterina i la Ribera]]></barri>
+                        <floor><![CDATA[bxs]]></floor>
+                        <postalcode label="Codi postal">
+                            <![CDATA[08003]]></postalcode>
+                        <city label="Ciutat"><![CDATA[Barcelona]]></city>
+                        <coordaddressx>
+                            <![CDATA[431510.7557318577]]></coordaddressx>
+                        <coordaddressy>
+                            <![CDATA[4581841.242445842]]></coordaddressy>
+                        <gmapx><![CDATA[41.385183820661204]]></gmapx>
+                        <gmapy><![CDATA[2.180852344790627]]></gmapy>
+                        <comsiva>
+                            <![CDATA[https://com-shi-va.barcelona.cat/ca/planifica_la_teva_ruta?desde=&hasta=41.385183820661204,2.180852344790627]]></comsiva>
+                    </item>
+                </addresses>
+                <phones/>
+                <interestinfo>
+                    <item>
+                        <interinfo>
+                            <![CDATA[www.museupicasso.bcn.cat]]></interinfo>
+                        <intercode><![CDATA[00100003]]></intercode>
+                        <label><![CDATA[Web]]></label>
+                    </item>
+                </interestinfo>
+                <votes label=""><![CDATA[]]></votes>
+                <internetref/>
+                <relations label="Altres"
+                           labelsection="Seccions d'aquest equipament">
+                    <item href="museu-picasso_92086001333">
+                        <entity_id><![CDATA[92086001333]]></entity_id>
+                        <reltype><![CDATA[6]]></reltype>
+                        <direct><![CDATA[Organitzat per]]></direct>
+                        <institutionname>
+                            <![CDATA[Museu Picasso]]></institutionname>
+                    </item>
+                </relations>
+                <timetable>
+                    <horari label="Horaris">
+                        <dies>
+                            <![CDATA[dimarts, dimecres, divendres, dissabtes i diumenges<br/>excepte 24 de juny<br/> 24 de desembre<br/> 25 de desembre<br/> 31 de desembre]]></dies>
+                        <hores><![CDATA[de 09:00 h a 19:00 h]]></hores>
+                        <preu label="Preus">
+                            <![CDATA[Entrada general de: 14 € <br/>(col·lecció permanent + exposició temporal)<p style="margin:0">Entrada a exposició permanent: 11 €</p><p style="margin:0">Entrada a exposició temporal: 6.50 € </p><p style="margin:0"><b>Reduïda</b> (caldrà acreditar la condició): 7.50 € (col·lecció permanent + exposició temporal)</p><p style="margin:0">Entrada reduïda a exposició permanent: 7 €</p><p style="margin:0">Entrada reduïda a exposició temporal: 4.50 €</p><p style="margin:0">- Persones de 18 a 25 anys<br/>- Persones de 65 anys o més<br/>- Titulars targeta rosa reduïda <br/>- Persones a l'atur<br/>- Titulars del carnet de Biblioteques de Barcelona </p><p style="margin:0"><b>Articket</b>: 30 €</p><p style="margin:0"><b>Carnet del Museu</b><br/>- Individual: 12 €<br/>- Familiar: 15 €</p><p style="margin:0"><b>Gratuïta</b> (caldrà acreditar la condició):<br/>- El 1r diumenge de cada mes<br/>- Tots els diumenges de 15 a 19 h<br/>- Menors de 18 anys<br/>- Estudiants universitaris<br/>- Titulars targeta rosa gratuïta <br/>- Titulars passi metropolità dacompanyant dun discapacitat<br/>- Carnet de l'ICOM<br/>- Professors  (reserva imprescindible)<br/>- Els guies turístics en lexercici de la seva feina<br/>- Els periodistes acreditats<br/>- 12 de febrer (Santa Eulàlia) <br/>- 18 de maig (Dia Internacional dels Museus)<br/>- 19 de maig (Nit dels Museus: gratuït de 19 a 1 h)<br/>- 24 de setembre (la Mercè)</p>]]></preu>
+                        <observacions>
+                            <![CDATA[<br/>Les entrades a les exposicions es poden comprar on-line al web del Museu.<p style="margin:0">Els dilluns festius els museu està tancat</p><p style="margin:0">Audioguies (8 llengües): 3 e.</p><p style="margin:0">El Carnet del Museu permet el lliure accés a tot el museu sense passar per taquilles, durant un any des de la data de l'adquisició.</p><p style="margin:0">Les visites en grup només es podran fer amb concertació prèvia per telèfon, fax o correu electrònic.</p><p style="margin:0">Un responsable de grup per cada 10 visitants pot tenir l'entrada gratuïta.</p>]]></observacions>
+                    </horari>
+                    <horari label="Horaris">
+                        <dies>
+                            <![CDATA[24 de desembre<br/> 31 de desembre]]></dies>
+                        <hores><![CDATA[de 09:00 h a 14:00 h]]></hores>
+                    </horari>
+                    <horari label="Horaris">
+                        <dies><![CDATA[dijous<br/>excepte 1 de maig]]></dies>
+                        <hores><![CDATA[de 09:00 h a 21:30 h]]></hores>
+                    </horari>
+                    <horari label="Horaris">
+                        <dies><![CDATA[19 de maig]]></dies>
+                        <hores><![CDATA[de 19:00 h a 01:00 h]]></hores>
+                        <preu label="Preus"><![CDATA[Entrada Gratuïta]]></preu>
+                        <observacions>
+                            <![CDATA[La Nit dels Museus]]></observacions>
+                    </horari>
+                </timetable>
+                <gmapx label="Lat"><![CDATA[41.385183820661204]]></gmapx>
+                <gmapy label="Long"><![CDATA[2.180852344790627]]></gmapy>
+                <comsiva label=""><![CDATA[]]></comsiva>
+                <type label="Tipus"><![CDATA[Agenda]]></type>
+                <name label="Nom">
+                    <![CDATA[Exposició permanent del Museu Picasso]]></name>
+                <date label="Quan:"><![CDATA[Permanent]]></date>
+                <resum label="Resum"><![CDATA[]]></resum>
+                <texte label=""><![CDATA[]]></texte>
+                <nameasia label="">
+                    <![CDATA[Exposició permanent del Museu Picasso]]></nameasia>
+                <link href=""><![CDATA[Com s'hi va]]></link>
+                <recommend
+                        label="ELS USUARIS QUE HAN VIST AIXÒ, TAMBE HAN VIST..."/>
+            </item>
+        </ageq>
+    </detall>
+    <ageq label="Actes que s'hi celebren">
+        <item href="exposicio-permanent-del-museu-picasso_1299140408.html">
+            <entity_id label="entity_id"><![CDATA[1299140408]]></entity_id>
+            <entity_type label=""><![CDATA[AG]]></entity_type>
+            <lastupdatedate label="">
+                <![CDATA[2018-05-10 10:39:42+02:00]]></lastupdatedate>
+            <actname label="">
+                <![CDATA[Exposició permanent del Museu Picasso]]></actname>
+            <tickettype_code label=""><![CDATA[Pagament]]></tickettype_code>
+            <acttype label="E"><![CDATA[]]></acttype>
+            <warning label=""><![CDATA[]]></warning>
+            <comments label="">
+                <![CDATA[És la col·lecció més important del món dels períodes de formació de l'artista.<BR>Destaquen l'obra de l'època blava, la de l'època rosa, la sèrie interpretativa de 'Las Meninas' de Velázquez de 1957, les ceràmiques i l'obra gravada.<BR><BR>El Museu Picasso de Barcelona acull, <b>fins maig de 2013,</b> dos obres en prèstec temporal:<BR>L&acute;oli Dues dones davant d&acute;una finestra (1927) i l&acute;estudi a llapis i tinta xinesa Mademoiselle Léonie (1910), de Pablo Picasso.]]></comments>
+            <institution_id label=""><![CDATA[92086001333]]></institution_id>
+            <institutionname href="museu-picasso_92086001333.html" label="On:">
+                <![CDATA[Museu Picasso]]></institutionname>
+            <street label="Adreça"><![CDATA[C Montcada]]></street>
+            <district><![CDATA[Ciutat Vella]]></district>
+            <postalcode label="Codi postal"><![CDATA[08003]]></postalcode>
+            <city label="Ciutat"><![CDATA[Barcelona]]></city>
+            <coordaddressx><![CDATA[]]></coordaddressx>
+            <coordaddressy><![CDATA[]]></coordaddressy>
+            <addresses>
+                <item>
+                    <street label="Adreça"><![CDATA[C Montcada]]></street>
+                    <streetnum_i label="Núm"><![CDATA[15]]></streetnum_i>
+                    <district><![CDATA[Ciutat Vella]]></district>
+                    <barri label="Àrea">
+                        <![CDATA[Sant Pere, Santa Caterina i la Ribera]]></barri>
+                    <floor><![CDATA[bxs]]></floor>
+                    <postalcode label="Codi postal">
+                        <![CDATA[08003]]></postalcode>
+                    <city label="Ciutat"><![CDATA[Barcelona]]></city>
+                    <coordaddressx><![CDATA[431510.7557318577]]></coordaddressx>
+                    <coordaddressy><![CDATA[4581841.242445842]]></coordaddressy>
+                    <gmapx><![CDATA[41.385183820661204]]></gmapx>
+                    <gmapy><![CDATA[2.180852344790627]]></gmapy>
+                    <comsiva>
+                        <![CDATA[https://com-shi-va.barcelona.cat/ca/planifica_la_teva_ruta?desde=&hasta=41.385183820661204,2.180852344790627]]></comsiva>
+                </item>
+            </addresses>
+            <phones/>
+            <interestinfo>
+                <item>
+                    <interinfo><![CDATA[www.museupicasso.bcn.cat]]></interinfo>
+                    <intercode><![CDATA[00100003]]></intercode>
+                    <label><![CDATA[Web]]></label>
+                </item>
+            </interestinfo>
+            <votes label=""><![CDATA[]]></votes>
+            <internetref/>
+            <relations label="Altres"
+                       labelsection="Seccions d'aquest equipament">
+                <item href="museu-picasso_92086001333">
+                    <entity_id><![CDATA[92086001333]]></entity_id>
+                    <reltype><![CDATA[6]]></reltype>
+                    <direct><![CDATA[Organitzat per]]></direct>
+                    <institutionname><![CDATA[Museu Picasso]]></institutionname>
+                </item>
+            </relations>
+            <timetable>
+                <horari label="Horaris">
+                    <dies>
+                        <![CDATA[dimarts, dimecres, divendres, dissabtes i diumenges<br/>excepte 24 de juny<br/> 24 de desembre<br/> 25 de desembre<br/> 31 de desembre]]></dies>
+                    <hores><![CDATA[de 09:00 h a 19:00 h]]></hores>
+                    <preu label="Preus">
+                        <![CDATA[Entrada general de: 14 € <br/>(col·lecció permanent + exposició temporal)<p style="margin:0">Entrada a exposició permanent: 11 €</p><p style="margin:0">Entrada a exposició temporal: 6.50 € </p><p style="margin:0"><b>Reduïda</b> (caldrà acreditar la condició): 7.50 € (col·lecció permanent + exposició temporal)</p><p style="margin:0">Entrada reduïda a exposició permanent: 7 €</p><p style="margin:0">Entrada reduïda a exposició temporal: 4.50 €</p><p style="margin:0">- Persones de 18 a 25 anys<br/>- Persones de 65 anys o més<br/>- Titulars targeta rosa reduïda <br/>- Persones a l'atur<br/>- Titulars del carnet de Biblioteques de Barcelona </p><p style="margin:0"><b>Articket</b>: 30 €</p><p style="margin:0"><b>Carnet del Museu</b><br/>- Individual: 12 €<br/>- Familiar: 15 €</p><p style="margin:0"><b>Gratuïta</b> (caldrà acreditar la condició):<br/>- El 1r diumenge de cada mes<br/>- Tots els diumenges de 15 a 19 h<br/>- Menors de 18 anys<br/>- Estudiants universitaris<br/>- Titulars targeta rosa gratuïta <br/>- Titulars passi metropolità dacompanyant dun discapacitat<br/>- Carnet de l'ICOM<br/>- Professors  (reserva imprescindible)<br/>- Els guies turístics en lexercici de la seva feina<br/>- Els periodistes acreditats<br/>- 12 de febrer (Santa Eulàlia) <br/>- 18 de maig (Dia Internacional dels Museus)<br/>- 19 de maig (Nit dels Museus: gratuït de 19 a 1 h)<br/>- 24 de setembre (la Mercè)</p>]]></preu>
+                    <observacions>
+                        <![CDATA[<br/>Les entrades a les exposicions es poden comprar on-line al web del Museu.<p style="margin:0">Els dilluns festius els museu està tancat</p><p style="margin:0">Audioguies (8 llengües): 3 e.</p><p style="margin:0">El Carnet del Museu permet el lliure accés a tot el museu sense passar per taquilles, durant un any des de la data de l'adquisició.</p><p style="margin:0">Les visites en grup només es podran fer amb concertació prèvia per telèfon, fax o correu electrònic.</p><p style="margin:0">Un responsable de grup per cada 10 visitants pot tenir l'entrada gratuïta.</p>]]></observacions>
+                </horari>
+                <horari label="Horaris">
+                    <dies><![CDATA[24 de desembre<br/> 31 de desembre]]></dies>
+                    <hores><![CDATA[de 09:00 h a 14:00 h]]></hores>
+                </horari>
+                <horari label="Horaris">
+                    <dies><![CDATA[dijous<br/>excepte 1 de maig]]></dies>
+                    <hores><![CDATA[de 09:00 h a 21:30 h]]></hores>
+                </horari>
+                <horari label="Horaris">
+                    <dies><![CDATA[19 de maig]]></dies>
+                    <hores><![CDATA[de 19:00 h a 01:00 h]]></hores>
+                    <preu label="Preus"><![CDATA[Entrada Gratuïta]]></preu>
+                    <observacions><![CDATA[La Nit dels Museus]]></observacions>
+                </horari>
+            </timetable>
+            <gmapx label="Lat"><![CDATA[41.385183820661204]]></gmapx>
+            <gmapy label="Long"><![CDATA[2.180852344790627]]></gmapy>
+            <comsiva label=""><![CDATA[]]></comsiva>
+            <type label="Tipus"><![CDATA[Agenda]]></type>
+            <name label="Nom">
+                <![CDATA[Exposició permanent del Museu Picasso]]></name>
+            <date label="Quan:"><![CDATA[Permanent]]></date>
+            <resum label="Resum"><![CDATA[]]></resum>
+            <texte label=""><![CDATA[]]></texte>
+            <nameasia label="">
+                <![CDATA[Exposició permanent del Museu Picasso]]></nameasia>
+            <link href=""><![CDATA[Com s'hi va]]></link>
+            <recommend
+                    label="ELS USUARIS QUE HAN VIST AIXÒ, TAMBE HAN VIST..."/>
+        </item>
+    </ageq>
+    <aprop label="Prop d'aquí">
+        <aparcs label="Aparcaments"/>
+        <puntsancoratge label="Punts d'ancoratge per a bicis"/>
+        <restaurants label="Restaurants"/>
+    </aprop>
+    <script/>
+</ajax>

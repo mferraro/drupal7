@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+<div id="mapa"></div>
+<script type="text/javascript" src="https://w33.bcn.cat/planolBCN/widgetguia/ca/'"></script>
+<script type="text/javascript">
+  var widgetGuia;
+
+  document.addEventListener('bcn-planol-widget-ready', function () {
+    // K013, K012, K009, K010 i K018
+    widgetGuia = new widgetBCN({
+      "target": "mapa",
+      "controls": true,
+      "titol": "Exemple capes",
+      "centre": [430916, 4583697],
+      "zoom": 4,
+      "mostraLlegenda": true,
+      "capes": [{
+        "codi": "K013",
+        "activada": false,
+        // "normal": {
+        //   "icona": "//icons.iconarchive.com/icons/carlosjj/mozilla/24/Thunderbird-icon.png"
+        // },
+        // "seleccio": {
+        //   "icona": "//icons.iconarchive.com/icons/carlosjj/mozilla/24/Sunbird-icon.png"
+        // },
+        "offset": 0
+      }, {
+        "codi": "K012",
+        "activada": false
+      }, {
+        "codi": "K009",
+        "activada": false
+      }, {
+        "codi": "K010",
+        "activada": true
+      }, {
+        "codi": "K018",
+        "activada": false
+      }]
+    });
+
+
+    widgetGuia.on("ready", function () {
+      // widgetGuia.afegeixCapa({ "codi": "A001", "activada": true });
+      afegeixGeoJSONRemot();
+      afegeixGeoJSONLocal();
+    });
+
+  });
+</script>
+</body>
+</html>
